@@ -1,0 +1,10 @@
+time:2019-12-05 15:55:43   filename:DBConn.py   funcname:__init__   Levelname:INFO   message:DBServer connect:host:127.0.0.1, User:sa, Pass:123, DB:DR2_User
+time:2019-12-05 15:55:43   filename:_internal.py   funcname:_log   Levelname:WARNING   message: * Debugger is active!
+time:2019-12-05 15:55:43   filename:_internal.py   funcname:_log   Levelname:INFO   message: * Debugger PIN: 248-684-957
+time:2019-12-05 15:55:44   filename:_internal.py   funcname:_log   Levelname:INFO   message: * Running on http://0.0.0.0:8879/ (Press CTRL+C to quit)
+time:2019-12-05 15:55:49   filename:mainWeb.py   funcname:checkRequesterAlow   Levelname:INFO   message:ip:127.0.0.1 request:<Request 'http://127.0.0.1/testDBProc?arg1=123&arg2=456&arg3=789&sign=a74298e4a259759687e3a5acb2e7ae12' [GET]>
+time:2019-12-05 15:55:49   filename:md5.py   funcname:get_param_md5   Levelname:INFO   message:srcStr: 123456789123456789
+time:2019-12-05 15:55:49   filename:md5.py   funcname:get_param_md5   Levelname:INFO   message:desStr:a74298e4a259759687e3a5acb2e7ae12
+time:2019-12-05 15:55:49   filename:DBConn.py   funcname:exec_proc   Levelname:INFO   message:exec_proc str:exec DR2_User.dbo.up_wingmGetUserItem '743D0CE3-5293-4844-B357-8065667BC1B2'
+time:2019-12-05 15:55:49   filename:_internal.py   funcname:_log   Levelname:INFO   message:127.0.0.1 - - [05/Dec/2019 15:55:49] "[1m[35mGET /testDBProc?arg1=123&arg2=456&arg3=789&sign=a74298e4a259759687e3a5acb2e7ae12 HTTP/1.1[0m" 500 -
+time:2019-12-05 15:56:20   filename:_internal.py   funcname:_log   Levelname:INFO   message: * Detected change in 'C:\\gqCode\\python\\testWebApi\\DBConn.py', reloading

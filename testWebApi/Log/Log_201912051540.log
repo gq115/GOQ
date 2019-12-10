@@ -1,0 +1,5 @@
+time:2019-12-05 15:40:00   filename:DBConn.py   funcname:__init__   Levelname:INFO   message:DBServer connect:host:127.0.0.1, User:sa, Pass:123, DB:DR2_User
+time:2019-12-05 15:40:01   filename:_internal.py   funcname:_log   Levelname:WARNING   message: * Debugger is active!
+time:2019-12-05 15:40:01   filename:_internal.py   funcname:_log   Levelname:INFO   message: * Debugger PIN: 248-684-957
+time:2019-12-05 15:40:01   filename:_internal.py   funcname:_log   Levelname:INFO   message: * Running on http://0.0.0.0:8879/ (Press CTRL+C to quit)
+time:2019-12-05 15:46:39   filename:_internal.py   funcname:_log   Levelname:INFO   message: * Detected change in 'C:\\gqCode\\python\\testWebApi\\mainWeb.py', reloading

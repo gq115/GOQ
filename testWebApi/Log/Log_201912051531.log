@@ -1,0 +1,308 @@
+time:2019-12-05 15:31:37   filename:DBConn.py   funcname:__init__   Levelname:INFO   message:DBServer connect:host:127.0.0.1, User:sa, Pass:123, DB:DR2_User
+time:2019-12-05 15:31:37   filename:_internal.py   funcname:_log   Levelname:INFO   message: * Running on http://127.0.0.1:8879/ (Press CTRL+C to quit)
+time:2019-12-05 15:31:40   filename:app.py   funcname:log_exception   Levelname:ERROR   message:Exception on /testDBProc [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1947, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2241, in preprocess_request
+    rv = func()
+  File "C:\gqCode\python\testWebApi\mainWeb.py", line 13, in checkRequesterAlow
+    clientHost = flask.request.headers.get("X-Forwarded-For", flase.request.remote_addr)
+NameError: name 'flase' is not defined
+time:2019-12-05 15:31:40   filename:_internal.py   funcname:_log   Levelname:INFO   message:127.0.0.1 - - [05/Dec/2019 15:31:40] "[1m[35mGET /testDBProc?arg1=123&arg2=456&arg3=789&sign=a74298e4a259759687e3a5acb2e7ae12 HTTP/1.1[0m" 500 -
+time:2019-12-05 15:32:01   filename:app.py   funcname:log_exception   Levelname:ERROR   message:Exception on /testDBProc [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1947, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2241, in preprocess_request
+    rv = func()
+  File "C:\gqCode\python\testWebApi\mainWeb.py", line 13, in checkRequesterAlow
+    clientHost = flask.request.headers.get("X-Forwarded-For", flase.request.remote_addr)
+NameError: name 'flase' is not defined
+time:2019-12-05 15:32:01   filename:_internal.py   funcname:_log   Levelname:INFO   message:127.0.0.1 - - [05/Dec/2019 15:32:01] "[1m[35mGET /testDBProc?arg1=123&arg2=456&arg3=789&sign=a74298e4a259759687e3a5acb2e7ae12 HTTP/1.1[0m" 500 -
+time:2019-12-05 15:32:28   filename:app.py   funcname:log_exception   Levelname:ERROR   message:Exception on /testDBProc [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1947, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2241, in preprocess_request
+    rv = func()
+  File "C:\gqCode\python\testWebApi\mainWeb.py", line 13, in checkRequesterAlow
+    clientHost = flask.request.headers.get("X-Forwarded-For", flase.request.remote_addr)
+NameError: name 'flase' is not defined
+time:2019-12-05 15:32:28   filename:_internal.py   funcname:_log   Levelname:INFO   message:127.0.0.1 - - [05/Dec/2019 15:32:28] "[1m[35mGET /testDBProc?arg1=123&arg2=456&arg3=789&sign=a74298e4a259759687e3a5acb2e7ae12 HTTP/1.1[0m" 500 -
+time:2019-12-05 15:32:30   filename:app.py   funcname:log_exception   Levelname:ERROR   message:Exception on /testDBProc [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1947, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2241, in preprocess_request
+    rv = func()
+  File "C:\gqCode\python\testWebApi\mainWeb.py", line 13, in checkRequesterAlow
+    clientHost = flask.request.headers.get("X-Forwarded-For", flase.request.remote_addr)
+NameError: name 'flase' is not defined
+time:2019-12-05 15:32:30   filename:_internal.py   funcname:_log   Levelname:INFO   message:127.0.0.1 - - [05/Dec/2019 15:32:30] "[1m[35mGET /testDBProc?arg1=123&arg2=456&arg3=789&sign=a74298e4a259759687e3a5acb2e7ae12 HTTP/1.1[0m" 500 -
+time:2019-12-05 15:32:31   filename:app.py   funcname:log_exception   Levelname:ERROR   message:Exception on /testDBProc [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1947, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2241, in preprocess_request
+    rv = func()
+  File "C:\gqCode\python\testWebApi\mainWeb.py", line 13, in checkRequesterAlow
+    clientHost = flask.request.headers.get("X-Forwarded-For", flase.request.remote_addr)
+NameError: name 'flase' is not defined
+time:2019-12-05 15:32:31   filename:_internal.py   funcname:_log   Levelname:INFO   message:127.0.0.1 - - [05/Dec/2019 15:32:31] "[1m[35mGET /testDBProc?arg1=123&arg2=456&arg3=789&sign=a74298e4a259759687e3a5acb2e7ae12 HTTP/1.1[0m" 500 -
+time:2019-12-05 15:33:23   filename:app.py   funcname:log_exception   Levelname:ERROR   message:Exception on /testDBProc [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1947, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2241, in preprocess_request
+    rv = func()
+  File "C:\gqCode\python\testWebApi\mainWeb.py", line 13, in checkRequesterAlow
+    clientHost = flask.request.headers.get("X-Forwarded-For", flase.request.remote_addr)
+NameError: name 'flase' is not defined
+time:2019-12-05 15:33:23   filename:_internal.py   funcname:_log   Levelname:INFO   message:127.0.0.1 - - [05/Dec/2019 15:33:23] "[1m[35mGET /testDBProc?arg1=123&arg2=456&arg3=789&sign=a74298e4a259759687e3a5acb2e7ae12 HTTP/1.1[0m" 500 -
+time:2019-12-05 15:33:23   filename:app.py   funcname:log_exception   Levelname:ERROR   message:Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1947, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2241, in preprocess_request
+    rv = func()
+  File "C:\gqCode\python\testWebApi\mainWeb.py", line 13, in checkRequesterAlow
+    clientHost = flask.request.headers.get("X-Forwarded-For", flase.request.remote_addr)
+NameError: name 'flase' is not defined
+time:2019-12-05 15:33:23   filename:_internal.py   funcname:_log   Levelname:INFO   message:127.0.0.1 - - [05/Dec/2019 15:33:23] "[1m[35mGET /favicon.ico HTTP/1.1[0m" 500 -
+time:2019-12-05 15:34:04   filename:app.py   funcname:log_exception   Levelname:ERROR   message:Exception on /testDBProc [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1947, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2241, in preprocess_request
+    rv = func()
+  File "C:\gqCode\python\testWebApi\mainWeb.py", line 13, in checkRequesterAlow
+    clientHost = flask.request.headers.get("X-Forwarded-For", flase.request.remote_addr)
+NameError: name 'flase' is not defined
+time:2019-12-05 15:34:04   filename:_internal.py   funcname:_log   Levelname:INFO   message:127.0.0.1 - - [05/Dec/2019 15:34:04] "[1m[35mGET /testDBProc?arg1=123&arg2=456&arg3=789&sign=a74298e4a259759687e3a5acb2e7ae12 HTTP/1.1[0m" 500 -
+time:2019-12-05 15:35:52   filename:app.py   funcname:log_exception   Levelname:ERROR   message:Exception on /testDBProc [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1947, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2241, in preprocess_request
+    rv = func()
+  File "C:\gqCode\python\testWebApi\mainWeb.py", line 13, in checkRequesterAlow
+    clientHost = flask.request.headers.get("X-Forwarded-For", flase.request.remote_addr)
+NameError: name 'flase' is not defined
+time:2019-12-05 15:35:52   filename:_internal.py   funcname:_log   Levelname:INFO   message:127.0.0.1 - - [05/Dec/2019 15:35:52] "[1m[35mGET /testDBProc?arg1=123&arg2=456&arg3=789&sign=a74298e4a259759687e3a5acb2e7ae12 HTTP/1.1[0m" 500 -
+time:2019-12-05 15:35:52   filename:app.py   funcname:log_exception   Levelname:ERROR   message:Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1947, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2241, in preprocess_request
+    rv = func()
+  File "C:\gqCode\python\testWebApi\mainWeb.py", line 13, in checkRequesterAlow
+    clientHost = flask.request.headers.get("X-Forwarded-For", flase.request.remote_addr)
+NameError: name 'flase' is not defined
+time:2019-12-05 15:35:52   filename:_internal.py   funcname:_log   Levelname:INFO   message:127.0.0.1 - - [05/Dec/2019 15:35:52] "[1m[35mGET /favicon.ico HTTP/1.1[0m" 500 -
+time:2019-12-05 15:36:13   filename:app.py   funcname:log_exception   Levelname:ERROR   message:Exception on /testDBProc [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1947, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2241, in preprocess_request
+    rv = func()
+  File "C:\gqCode\python\testWebApi\mainWeb.py", line 13, in checkRequesterAlow
+    clientHost = flask.request.headers.get("X-Forwarded-For", flase.request.remote_addr)
+NameError: name 'flase' is not defined
+time:2019-12-05 15:36:13   filename:_internal.py   funcname:_log   Levelname:INFO   message:127.0.0.1 - - [05/Dec/2019 15:36:13] "[1m[35mGET /testDBProc?arg1=123&arg2=456&arg3=789&sign=a74298e4a259759687e3a5acb2e7ae12 HTTP/1.1[0m" 500 -
+time:2019-12-05 15:36:18   filename:app.py   funcname:log_exception   Levelname:ERROR   message:Exception on /testDBProc [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1947, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2241, in preprocess_request
+    rv = func()
+  File "C:\gqCode\python\testWebApi\mainWeb.py", line 13, in checkRequesterAlow
+    clientHost = flask.request.headers.get("X-Forwarded-For", flase.request.remote_addr)
+NameError: name 'flase' is not defined
+time:2019-12-05 15:36:18   filename:_internal.py   funcname:_log   Levelname:INFO   message:127.0.0.1 - - [05/Dec/2019 15:36:18] "[1m[35mGET /testDBProc?arg1=123&arg2=456&arg3=789&sign=a74298e4a259759687e3a5acb2e7ae12 HTTP/1.1[0m" 500 -
+time:2019-12-05 15:36:18   filename:app.py   funcname:log_exception   Levelname:ERROR   message:Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1947, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2241, in preprocess_request
+    rv = func()
+  File "C:\gqCode\python\testWebApi\mainWeb.py", line 13, in checkRequesterAlow
+    clientHost = flask.request.headers.get("X-Forwarded-For", flase.request.remote_addr)
+NameError: name 'flase' is not defined
+time:2019-12-05 15:36:18   filename:_internal.py   funcname:_log   Levelname:INFO   message:127.0.0.1 - - [05/Dec/2019 15:36:18] "[1m[35mGET /favicon.ico HTTP/1.1[0m" 500 -
+time:2019-12-05 15:38:30   filename:app.py   funcname:log_exception   Levelname:ERROR   message:Exception on /testDBProc [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1947, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2241, in preprocess_request
+    rv = func()
+  File "C:\gqCode\python\testWebApi\mainWeb.py", line 13, in checkRequesterAlow
+    clientHost = flask.request.headers.get("X-Forwarded-For", flase.request.remote_addr)
+NameError: name 'flase' is not defined
+time:2019-12-05 15:38:30   filename:_internal.py   funcname:_log   Levelname:INFO   message:127.0.0.1 - - [05/Dec/2019 15:38:30] "[1m[35mGET /testDBProc?arg1=123&arg2=456&arg3=789&sign=a74298e4a259759687e3a5acb2e7ae12 HTTP/1.1[0m" 500 -
+time:2019-12-05 15:46:49   filename:app.py   funcname:log_exception   Levelname:ERROR   message:Exception on /testDBProc [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1947, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2241, in preprocess_request
+    rv = func()
+  File "C:\gqCode\python\testWebApi\mainWeb.py", line 13, in checkRequesterAlow
+    #     clientHost = flask.request.headers.get("X-Forwarded-For", flase.request.remote_addr)
+NameError: name 'flase' is not defined
+time:2019-12-05 15:46:49   filename:_internal.py   funcname:_log   Levelname:INFO   message:127.0.0.1 - - [05/Dec/2019 15:46:49] "[1m[35mGET /testDBProc?arg1=123&arg2=456&arg3=789&sign=a74298e4a259759687e3a5acb2e7ae12 HTTP/1.1[0m" 500 -
+time:2019-12-05 15:46:52   filename:app.py   funcname:log_exception   Levelname:ERROR   message:Exception on /testDBProc [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1947, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2241, in preprocess_request
+    rv = func()
+  File "C:\gqCode\python\testWebApi\mainWeb.py", line 13, in checkRequesterAlow
+    #     clientHost = flask.request.headers.get("X-Forwarded-For", flase.request.remote_addr)
+NameError: name 'flase' is not defined
+time:2019-12-05 15:46:52   filename:_internal.py   funcname:_log   Levelname:INFO   message:127.0.0.1 - - [05/Dec/2019 15:46:52] "[1m[35mGET /testDBProc?arg1=123&arg2=456&arg3=789&sign=a74298e4a259759687e3a5acb2e7ae12 HTTP/1.1[0m" 500 -
+time:2019-12-05 15:48:07   filename:app.py   funcname:log_exception   Levelname:ERROR   message:Exception on /testDBProc [GET]
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1947, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2241, in preprocess_request
+    rv = func()
+  File "C:\gqCode\python\testWebApi\mainWeb.py", line 13, in checkRequesterAlow
+    #     clientHost = flask.request.headers.get("X-Forwarded-For", flase.request.remote_addr)
+NameError: name 'flase' is not defined
+time:2019-12-05 15:48:07   filename:_internal.py   funcname:_log   Levelname:INFO   message:127.0.0.1 - - [05/Dec/2019 15:48:07] "[1m[35mGET /testDBProc?arg1=123&arg2=456&arg3=789&sign=a74298e4a259759687e3a5acb2e7ae12 HTTP/1.1[0m" 500 -

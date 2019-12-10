@@ -1,0 +1,2 @@
+time:2019-12-05 15:40:00   filename:DBConn.py   funcname:__init__   Levelname:INFO   message:DBServer connect:host:127.0.0.1, User:sa, Pass:123, DB:DR2_User
+time:2019-12-05 15:40:00   filename:_internal.py   funcname:_log   Levelname:INFO   message: * Restarting with stat

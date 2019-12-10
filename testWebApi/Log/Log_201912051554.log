@@ -1,0 +1,6 @@
+time:2019-12-05 15:54:57   filename:DBConn.py   funcname:__init__   Levelname:INFO   message:DBServer connect:host:127.0.0.1, User:sa, Pass:123, DB:DR2_User
+time:2019-12-05 15:54:57   filename:_internal.py   funcname:_log   Levelname:WARNING   message: * Debugger is active!time:2019-12-05 15:55:25   filename:_internal.py   funcname:_log   Levelname:INFO   message: * Restarting with stat
+4-957
+time:2019-12-05 15:54:58   filename:_internal.py   funcname:_log   Levelname:INFO   message: * Running on http://0.0.0.0:8879/ (Press CTRL+C to quit)
+time:2019-12-05 15:54:59   filename:_internal.py   funcname:_log   Levelname:INFO   message:127.0.0.1 - - [05/Dec/2019 15:54:59] "[1m[35mGET /testDBProc?arg1=123&arg2=456&arg3=789&sign=a74298e4a259759687e3a5acb2e7ae12 HTTP/1.1[0m" 500 -
+time:2019-12-05 15:55:25   filename:_internal.py   funcname:_log   Levelname:INFO   message: * Detected change in 'C:\\gqCode\\python\\testWebApi\\mainWeb.py', reloading
