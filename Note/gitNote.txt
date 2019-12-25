@@ -23,7 +23,7 @@ git merge branchName					合并分支
 git reset HEAD fileName					回退缓存区某个文件
 git reset --HARD Versions				回退本地到某个版本
 
-git rm --cached fileNmae				删除追踪状态
+git rm --cached fileNmae				删除追踪状态        之后需要执行 git add . 以及提交到网络仓库
 git rm fileName							直接删除本地文件
 git clean -fd							清楚异常文件
 
