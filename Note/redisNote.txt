@@ -59,9 +59,9 @@ String:字符串命令
 	mget key1[ key2], setnx key value， append key value， strlen key
 	
 Hask:哈希命令
-	hmset key field1 value1[ dield1 value1]， hget key field， hgetall key
-	hkeys key， hvals key， hlen key， hdel key[ field1 [field2]]， 
-	hexists key field， 
+	hset key filed value, hmset key field1 value1[ dield1 value1]， 
+	hget key field， hgetall key, hkeys key， hvals key， hlen key， 
+	hdel key[ field1 [field2]]，hexists key field
 	
 List:列表
 	lpush key value1[ value2]， lpushx key value， 
@@ -74,6 +74,7 @@ List:列表
 Set:集合
 	sadd key member1[ member2]， smembers key， 
 	sismember key member， scard key， srem key member1[ member2]
+	sinter key1[key2], sunion key1[key2], sdiff key1[key2]
 	
 Sorted Set:有序集合
 	zadd key score1 member1 [score2 member2]，zrange key start stop

@@ -1,0 +1,141 @@
+WebServer常用框架:
+
+一：Flask:
+	app = Flask(__name__)
+	app.debug = True    客户端可以显示错误信息，但是本地不能断点调试
+	app.run(host=config.LISTEN_IP,threaded=True,port=config.LISTEN_PORT)
+	app.before_request 在请求(request)之前做出响应
+	app.after_request 在响应(response)之前做出响应
+	request.args.get				获取Http参数
+	request.headers.get				获取Http头
+	app.jsonify						将元组组装为JSon格式
+	app.errorhandler(404)   #   定义404的错误类型
+	
+	请求钩子
+	请求钩子是通过装饰器的形式实现，Flask支持如下四种请求钩子：
+	（1）before_first_request：在处理第一个请求前运行。
+			装饰器： @app.before_first_request
+	（2）before_request：在每次请求前运行。
+			装饰器： @app.before_request
+	（3）after_request(response)：如果没有未处理的异常抛出，在每次请求后运行。 
+			装饰器： @app.after_request
+	（4）teardown_request(response)：在每次请求后运行，即使有未处理的异常抛出。
+			装饰器： @app.teardown_request
+	注意，after_request和 teardown_request需要接受参数而且还要有返回值
+	
+	request中包含了前端发送过来的所有数据 ，请求的 request 对象中保存了一次HTTP请求的一切信息
+	通过request.from可以直接发送提取请求体中的表单格式数据，是一个类字典的对象
+	通过get方法只能拿到多个重名参数的第一个
+	
+	
+	request 请求参数异常
+		data		记录请求的数据，并转换为字符串
+		form		记录请求中的表单数据
+		args		记录请求中的查询参数
+		cookies		记录请求中的cookie信息
+		headers		记录请求中的请求头
+		method		记录请求使用的HTTP方法
+		url			记录请求的URL地址
+		files		记录请求上传的文件
+		json		记录请求的json数据
+		
+二：Tornado:
+详细介绍：https://www.jianshu.com/p/3a928ade93dc
+	结构：
+		Web框架：包括处理器、模板、数据库连接、认证、本地化等Web框架所需功能，
+			提供创建web应用程序和web的各种基本库
+		HttpServer：基于HTTP协议实现了HTTP服务器和客户端，
+			提供Http的服务
+		IOLoop：最底层、处理IO事件，
+			事件处理的核心功能
+		异步：ioLoop.gen 提供了一系列异步处理
+	程序处理流程：
+		1，tornado.options.define 设置默认属性
+		2，设置 url 路由表
+		3，tornado.web.Application 创建应用程序
+		4，应用程序启动监听
+		5，ioloop 启动事件处理
+		
+	
+	官网介绍：
+		1，Tornado 是一种单进程单线程的异步框架
+		2，Tornado 使用列表存储所有的url,以及统计url数，App根据情况从列表中读取
+		3，Tornado 自带多进程的方式，App.start(),但是尽量不要在项目中使用，因为
+			多个进程在监听同一个端口,ioloop对进程来说是透明的，分配资源不均匀，
+			所以一般都是用 supervisord 管理多有Tornado成员，再使用 nginx 反向代
+			理，nginx均衡服务器分配资源，nTornado框架 处理数据
+	Nginx + Tornado 服务器搭建：
+		1，搭建 Tornado 服务器，确保通畅
+		2，搭建 Nginx 服务器，其中 config.nginx 里面 配置upstream和proxy_pass
+		3，使用 supervisord 管理即可
+		
+
+三：Django:
+	模型（Model）：  即数据存取层，处理与数据相关的所有事务： 如何存取、如何验证有效
+		性、包含哪些行为以及数据之间的关系等。
+	模板(Template)： 即表现层，处理与表现相关的决定： 如何在页面或其他类型文档中进行显示。
+	视图（View）：   即业务逻辑层，存取模型及调取恰当模板的相关逻辑。模型与模板的桥梁。
+	创建流程及其功能：
+		1：django-admin startproject projectName:使用django-admin 创建一个名为projectName的工程
+		2：创建View相关 Views.py 视图文件，并定义视图函数
+		3：设置 setting.py 中的 urlpatterns Url导航
+		4：创建Template相关 templates 文件夹，存放模板文件
+		5：使用模板使用 render() 函数，并调用 Template 模板文件
+	模板标签：
+		1, {% if x %} ... {% elif %} ... {% endif %}    典型的if判断，判断是否有当前这个变量
+		2, 条件中可以使用 and or not 关键字
+		3, {% for i in list %} ... {% endfor %}    典型的for循环
+		4, {% ifequal a b %} ... {% else %} ... {% endifequal %}    两个变量判等，第一个不能做判断
+		5, {% include htmlName %}    将htmlName的html替换到当前模板的当前位置
+		6, {% include htmlName with argName='ValueName' %}    将htmlName的内容替换到当前位置，其中
+			htmlName中的argName替换为ValueName
+		7, {% extends "htmlName" %} ... {% block BlockName %} ... {% endblock %}    将htmlName中的BlockName
+			包含替换为当前部分
+
+Python功能库：
+1，xlwt Excel操作库
+	1, bookobj = xlwt.Workbook()		初始化并获取对象
+	2, bookobj.write(row,col,value)		在某个位置写入数据
+	3, bookobj.save(fileName)			将这个对象保存到文件中
+	4，bookobj.book.sheet_names()		列出文件的sheet名字
+	5，sheetobj = bookobj.book.sheet_by_index()	提取某个sheet的内容
+	6, sheetobj.name, sheet.nrows, sheet.ncols  这个sheet的内容
+	7，row_values()，col_values()，cell_value()，row(), cell()		获取sheet的内容
+2, yaml yaml格式读取
+	1，open打开这个文件
+	2，yaml.load 按照格式加载这个文件描述符
+	3，然后按照下标读取就行
+	yaml格式：
+		key:value			得到一个键值对
+		list:
+			- listTab1:value
+			- listTab2:value	得到一个列表
+		
+		
+		
+
+python 内置方法：
+	all, any, ascii, bin, bytearray, chr
+Json文本序列化、pickle数据序列化
+	
+	
+	
+模块分类
+	标准库
+		Range,
+		time,
+		datetime,
+		os,
+		sys,
+		shelve,
+		xml,
+		configparse,
+		hasklib,
+		Hmac,
+		re
+	开源模块
+	自定义模块
+
+
+
+https://www.zhihu.com/question/29372574/answer/88744491
