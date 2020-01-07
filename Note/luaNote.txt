@@ -1,0 +1,27 @@
+lua注释：单行注释 '--'， 多行注释 '--[[]]'
+lua数据类型：nil，boolean，number，string，function, userdata, thread, table
+lua变量：默认全局变量，加上local则为局部变量
+lua赋值：右值依次赋给左边的值
+lua循环：
+	while(condition) do xxx end
+	for init, condition, iter do xxx end
+	repeat xxx until( condition )
+lua流程：if(condition) then xxx end
+lua函数：function_range function function_name( argument1, ...) 
+		xxx
+		return xxx
+	end
+	可变参数： '...'， select：数量[select('#', ...)]，指定select(i, ...)
+lua运算符：算数运算符，关系运算符，逻辑运算符，..[连接两个字符串]，#[字符串或表的长度]
+lua字符串：upper,lower,find,reverse,format,len,byte,match,sub,gsub
+lua表：构造空表['{}'], sort, insert, remove
+lua模板与包：Lua 的模块是由变量、函数等已知元素组成的 table。
+	Lua模板的加载为 require "<模块名>"
+	Lua加载库为 local f = assert(loadlib(libpath, "functionName"))
+lua协同程序[coroutine]：create, resume, yield, status, wrap, running
+
+
+lua C相互调用：
+	C调lua：luaL_newstate,luaL_openlibs,luaL_dofile,lua_getglobal,lua_pushnumber;lua_call,lua_tonumber,lua_pop,lua_close
+	lua调C:luaL_newstate,luaL_openlibs,lua_register,luaL_dofile,lua_close
+	https://www.cnblogs.com/cdh49/p/3567904.html

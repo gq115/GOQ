@@ -1,0 +1,198 @@
+html 元素：
+	<!DOCTYPE html> 声明为 HTML5 文档
+	<html> 元素定义了整个 HTML 文档
+	<body> 元素定义了 HTML 文档的主体
+	<br/> 就是没有关闭标签的空元素（<br> 标签定义换行）
+html 属性：
+	属性与元素相对应
+html 标题：
+	<h1> - <h6>		定义 HTML 标题
+	<p>				定义一个段落
+	<hr>			定义水平线
+	<br>			插入单个折行(换行)
+	<!--...-->		定义注释
+html 文本格式化：
+	文本格式化：
+		<b> / <strong> 		[字体加粗]。
+		<em> / <i> 			[字体倾斜]。
+		<small> / <big> 	[缩小放大]。
+		<sub> / <sup>		[下标上标]。
+		<pre>				[预格式文本]。
+		<address>			[地址倾斜字体]。
+		<abbr> / <acronym>	内容缩写
+		<del> / <ins>		删除字效果和下划线效果
+html 链接:  <a>
+	id + href #id			实现页内跳转
+	target:规定在何处打开目标 URL。仅在 href 属性存在时使用。
+		_blank			在新窗口中打开被链接文档。
+		_self			默认。在相同的框架中打开被链接文档。
+		_parent			在父框架集中打开被链接文档。
+		_top			在整个窗口中打开被链接文档。
+		framename		在指定的框架中打开被链接文档。
+html 头部：<head>
+	title:定义网页标签显示内容
+	base:定义页面中所有链接默认的链接目标属性。
+		href, target
+	meta:标签描述了一些基本的元数据。
+		name:把 content 属性关联到一个名称。
+			application-name
+			author
+			description
+			generator
+			keywords
+		http-equiv:把 content 属性关联到 HTTP 头部。
+			content-type
+			default-style
+			refresh	
+		charset:定义文档的字符编码
+	script:定义了客户端的脚本文件
+		async		规定异步执行脚本（仅适用于外部脚本）。
+		charset		规定在脚本中使用的字符编码（仅适用于外部脚本）。
+		defer		规定当页面已完成解析后，执行脚本（仅适用于外部脚本）。
+		src			规定外部脚本的 URL。
+		type		规定脚本的 MIME 类型。
+	link:定义了文档与外部资源之间的关系。
+		rel:定义当前文档与被链接文档之间的关系
+			author	链接到该文档的作者。
+			help	链接到帮助文档。
+			icon	导入表示该文档的图标。
+			license	链接到该文档的版权信息。
+		href		定义被链接文档的位置。
+		hreflang	定义被链接文档中文本的语言。
+		media		规定被链接文档将显示在什么设备上。
+	style:标签定义了HTML文档的样式文件引用地址
+		media			为样式表规定不同的媒体类型。
+		scopedNew		如果使用该属性，则样式仅仅应用到 style 元素的父元素及其子元素。
+		type			规定样式表的 MIME 类型。
+html CSS样式：内联样式，内部样式表，外部引用
+html 图像
+	img:	alt，height，width，src，title，usemap
+	map: name
+	area:定义图像映射内部的区域
+		shape:default,rect,circle,poly		规定区域的形状。
+		coords:规定区域的坐标
+		href,alt
+html 表格
+	table: border
+		th：表头
+			colspan			可横跨的列数
+			rowspan			可横跨的行数
+			scope			表头表示的行，列等
+		tr：表行，不支持任何属性
+		td:标准单元格
+			colspan			可横跨的列数
+			rowspan			可横跨的行数
+		caption：定义表格的标题
+		cellspacing： 定义表格单元的间距
+		colgroup：对表格中的列进行组合，以便对其进行格式化。
+		col：规定了 <colgroup> 元素内部的每一列的列属性。
+			span：列的跨度
+html 列表
+	<ol>	定义有序列表
+	<ul>	定义无序列表
+	<li>	定义列表项
+	<dl>	定义列表
+	<dt>	自定义列表项目
+	<dd>	定义自定列表项的描述
+html 区块
+	<div>	定义了文档的区域，块级 (block-level)
+	<span>	用来组合文档中的行内元素， 内联元素(inline)
+html 表单
+	from:
+		支持操作:
+			<input>
+			<textarea>
+			<button>
+			<select>
+			<option>
+			<optgroup>
+			<fieldset>
+			<label>
+		action:规定当提交表单时向何处发送表单数据。
+		enctype:规定在向服务器发送表单数据之前如何对其进行编码。
+		method:用于发送表单数据的 HTTP 方法。
+		target:规定在何处打开 action URL。
+	
+	input:标签规定了用户可以在其中输入数据的输入字段。
+		value, height, width, id, name
+		type:规定要显示的input类型
+			button	定义可点击的按钮
+			checkbox	定义复选框。
+			colorNew	定义拾色器。
+			date	定义 date 控件（包括年、月、日，不包括时间）。
+			datetime-local	定义 date 和 time 控件（包括年、月、日、时、分、秒、几分之一秒，不带时区）。
+			emailNew	定义用于 e-mail 地址的字段。
+			file	定义文件选择字段和 "浏览..." 按钮，供文件上传。
+			hidden	定义隐藏输入字段。
+			image	定义图像作为提交按钮。
+			monthNew	定义 month 和 year 控件（不带时区）。
+			numberNew	定义用于输入数字的字段。
+			password	定义密码字段（字段中的字符会被遮蔽）。
+			radio	定义单选按钮。
+			rangeNew	定义用于精确值不重要的输入数字的控件（比如 slider 控件）。
+			reset	定义重置按钮（重置所有的表单值为默认值）。
+			searchNew	定义用于输入搜索字符串的文本字段。
+			submit	定义提交按钮。
+			telNew	定义用于输入电话号码的字段。
+			text	默认。定义一个单行的文本字段（默认宽度为 20 个字符）。
+			timeNew	定义用于输入时间的控件（不带时区）。
+			urlNew	定义用于输入 URL 的字段。
+			weekNew	定义 week 和 year 控件（不带时区）。
+	textarea:定义一个多行的文本输入控件
+		id, cols, rows, maxlength, readonly, required
+	label:for	规定 label 与哪个表单元素绑定。
+	fieldset: 标签会在相关表单元素周围绘制边框
+		<legend> 标签为 <fieldset> 元素定义标题
+	select:用来创建下拉列表。
+		multiple	当该属性为 true 时，可选择多个选项。
+		required	规定用户在提交表单前必须选择一个下拉列表中的选项。
+		size		规定下拉列表中可见选项的数目。
+	optgroup:把相关的选项组合在一起
+		label		为选项组规定描述。
+	option: 定义下拉列表中的一个选项
+		label		定义当使用 <optgroup> 时所使用的标注。
+		selected	规定选项（在首次显示在列表中时）表现为选中状态。
+		value		定义送往服务器的选项值。
+	button:定义一个按钮
+		form:规定按钮属于一个或多个表单
+		formaction:规定当提交表单时向何处发送表单数据。
+		formenctype:规定在向服务器发送表单数据之前如何对其进行编码。
+		name,value
+		type:button,reset,submit			规定按钮的类型。
+	list:属性引用 <datalist> 元素，其中包含 <input> 元素的预定义选项。
+	datelist:规定了 <input> 元素可能的选项列表
+	keygen:规定用于表单的密钥对生成器字段
+		keytype:rsa, dsa, ec 三种加密算法
+	output:标签作为计算结果输出显示(比如执行脚本的输出)
+		他的计算结果来自脚本或者from的 oninput 的计算结果
+html 框架
+	height, width, src, srcdoc，frameborder，target
+	sandbox:对 <iframe> 的内容定义一系列额外的限制。
+		""	启用所有限制条件
+		allow-same-origin	允许将内容作为普通来源对待。如果未使用该关键字，嵌入的内容将被视为一个独立的源。
+		allow-top-navigation	嵌入的页面的上下文可以导航（加载）内容到顶级的浏览上下文环境（browsing context）。如果未使用该关键字，这个操作将不可用。
+		allow-forms	允许表单提交。
+		allow-scripts	允许脚本执行。
+html 脚本
+	script:
+		src,type,charset
+		async:异步执行脚本
+		defer:当页面已完成解析后，执行脚本
+	npscript:当脚本无法执行的时候显示此内容
+html 媒体
+	embed:在 HTML 4 中是无效的插件基础对象
+		height, width, src, type
+	object:在各格式中都支持的插件基础对象
+		height, width, src, type
+	audio:html5中标签定义声音，比如音乐或其他音频流。格式相对比较多
+		preload:音频是否默认被加载以及如何被加载。
+			auto, metadata, none
+		muted:音频输出为静音
+		loop:循环播放
+		controls:则向用户显示音频控件
+	video:html5中定义一个视频或者影片
+	source:定义了media元素的多媒体资源。常用于组件成员使用
+		src,type
+	超链接：利用浏览器客户端网页打开播放文件
+	常用使用是，先利用html5的几个媒体标签，如果格式不支持，则使用插件基础对象
+	

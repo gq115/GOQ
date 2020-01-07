@@ -1,0 +1,20 @@
+C++
+https://www.cnblogs.com/findumars/p/5180539.html
+
+内存映射原理
+https://blog.csdn.net/whoamiyang/article/details/53365385 
+
+
+
+Win32流程
+https://www.cnblogs.com/weekbo/p/8681874.html
+https://www.cnblogs.com/weekbo/category/1189847.html    主页
+
+
+Windows 绘制HDC描述原理
+https://wenku.baidu.com/view/2fc93a05af45b307e87197c0.html
+https://blog.csdn.net/zxxssdsd/article/details/17027577
+
+
+C++ 11
+https://blog.csdn.net/jiange_zh/article/details/79356417

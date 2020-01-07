@@ -1,0 +1,118 @@
+配置：
+config get config_setting_name					--获取redis配置属性
+config set config_setting_name new_config_value		--设置redis配置属性
+	常用属性：
+		port 6379
+		databases 16
+		dbfilename dump.rdb
+		dir ./
+		requirepass foobared
+		maxclients 128
+配置参数说明：https://www.runoob.com/redis/redis-conf.html
+常用客户端配置命令：
+	config get dir
+	config get requirepass
+	auth password
+	config get maxclients
+	client kill
+
+
+数据库管理：
+redis-server path/to/.conf
+redis-cli -h host -p port -a pass
+select index
+save, dump.rdb移动目录
+CONFIG get requirepass， .conf文件中修改 requirepass 即可
+
+常用命令：
+	del key
+	exists key
+	keys patterm			列出数据库的所有key
+	rename key newkey
+	move key db
+	type key
+	
+	expire key seconds		
+	expireat key timestamp
+	pexpire key milliseconds
+	pexpireat key milliseconds-timestamp
+	persist key
+	pttl key
+	ttl key
+配置参数说明：https://www.runoob.com/redis/redis-keys.html
+
+
+数据类型：
+String		set，	get
+Hash		hmset,	hget
+List		lpush,	lrange
+Set			sadd,	smebers
+Zset		zadd,	zrangebyscore
+
+事务[redis每条语句都是原子性，所以事务不再提供原子性操作，相当于批量执行脚本]：
+	multi， exec， discard
+
+
+
+String:字符串命令
+	set key value， get key， getrange key start end， sset key value [key value ...]
+	mget key1[ key2], setnx key value， append key value， strlen key
+	
+Hask:哈希命令
+	hset key filed value, hmset key field1 value1[ dield1 value1]， 
+	hget key field， hgetall key, hkeys key， hvals key， hlen key， 
+	hdel key[ field1 [field2]]，hexists key field
+	
+List:列表
+	lpush key value1[ value2]， lpushx key value， 
+	rpush key value1[ value2]， rpushx key value， 
+	lindex key index, lrange key start stop
+	linsert key before|after pivot value， 
+	lrem key count value， ltrim key start stop， 
+	lpop key， rpop key， llen key
+
+Set:集合
+	sadd key member1[ member2]， smembers key， 
+	sismember key member， scard key， srem key member1[ member2]
+	sinter key1[key2], sunion key1[key2], sdiff key1[key2]
+	
+Sorted Set:有序集合
+	zadd key score1 member1 [score2 member2]，zrange key start stop
+	zrem key member1[ member2]
+	zremrangebyrank key start stop， zremrangebyscore key min max 
+	zrevrange key start stop， zrevrangebyscore key max min
+	zscore key member
+	
+	
+Redis 发布订阅
+	subscribe channel[ channel], unsubscribe [channel], punsubscribe [pattern]
+	publish channel message, psubscribe pattern[ pattern]
+	
+	
+Redis 事务
+	事务可以理解为一个打包的批量执行脚本
+	
+Redis 管道
+	Pipeline, 一次性请求执行多个命令，一次性执行多个结果
+
+
+Redis 集群
+1,https://www.cnblogs.com/vieta/p/11192137.html
+2,https://www.jianshu.com/p/84dbb25cc8dc
+
+	
+	
+	
+python Redis:
+	包含 redis 模块，然后 redis() 连接数据库。
+	使用相关命令执行即可。
+	详细参考教程：https://www.cnblogs.com/shenh/p/9176907.html
+
+
+C/C++ Redis:
+	在网上下载 redis https://github.com/MicrosoftArchive/redis/releases
+	配置安装环境
+	使用 redisConnect 链接。并使用 auth pass 登录
+	链接之后的 redisCommand 执行命令记录返回结果 redisReply
+	根据 Reply::type 判断返回类型，对于数据使用 Reply::Elemem 二维数据获取结果
+	详细参考教程：https://www.cnblogs.com/jylee/p/9844965.html

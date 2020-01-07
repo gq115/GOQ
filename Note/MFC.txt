@@ -1,0 +1,6 @@
+MFC程序初始化流程
+	https://blog.csdn.net/qq_30168505/article/details/52684869
+	
+	
+MFC完整教程
+	http://www.jizhuomi.com/school/c/153.html
