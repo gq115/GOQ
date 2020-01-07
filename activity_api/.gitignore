@@ -1,0 +1,7 @@
+tags
+ag-vim.tgz
+build
+
+*.log
+*.pyc
+dist

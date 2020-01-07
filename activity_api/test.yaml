@@ -1,0 +1,6 @@
+#数据库信息
+# DEBUG_MODE : true
+host : http://47.103.54.67:8878/
+acc : 15008262648
+test_count : 1000
+

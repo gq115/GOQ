@@ -1,0 +1,43 @@
+#数据库信息
+DEBUG_MODE : true
+CHECK_IP : false
+LOG_REQUEST_RESPONSE : true
+
+
+db_info:
+    user: sa
+    passwd: 123
+    host: 127.0.0.1
+    db_name : dr2_member
+
+
+log_db_info:
+    user: sa
+    passwd: 123
+    host: 127.0.0.1
+    db_name : dr2_log
+
+
+
+#允许访问web服务器的ip白名单
+ip_list:
+  - 127.0.0.1
+
+
+
+#服务器监听配置,填写内网ip
+server_listen:
+    ip: 0.0.0.0
+    port: 8878
+
+
+#运营数据生成工具文件路劲
+config_path:
+    player: D:\sqltools\export_sql_dist
+    shop: D:\sqltools\shop_buy_log2
+    ccuLog: D:\mhlz\gravitygames\dr2 server control tool\cculog
+    batDir: D:\sqltools\
+    batFile: autodata.bat
+
+
+
