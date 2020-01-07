@@ -94,7 +94,12 @@ Redis 事务
 	
 Redis 管道
 	Pipeline, 一次性请求执行多个命令，一次性执行多个结果
-	
+
+
+Redis 集群
+1,https://www.cnblogs.com/vieta/p/11192137.html
+2,https://www.jianshu.com/p/84dbb25cc8dc
+
 	
 	
 	
