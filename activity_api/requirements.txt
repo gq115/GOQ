@@ -11,4 +11,4 @@ PyInstaller==3.4
 pymssql==2.1.4
 pywin32-ctypes==0.2.0
 PyYAML==5.1
-Werkzeug==0.15.2
+Werkzeug==0.15.3
