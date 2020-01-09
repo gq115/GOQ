@@ -32,7 +32,7 @@
 	8.1：内联函数。利用函数代码替换函数调用，函数调用需要保存、跳转、执行、保存、跳转
 		内联inline可以和C的宏相比较
 	8.2：函数重载。重载取决于函数特征标=函数名+参数列表
-	8.3：函数模板。非模板函数>显示具体化>隐式具体化
+	8.3：函数模板。非模板函数>显示具体化>显示实例化>隐式实例化
 		具体化:隐式实例化，显示实例化，显示具体化
 	8.4：模板重载解析。创建候选列表、匹配列表、确定最佳可行函数
 		匹配列表：完全匹配[转换最少优先]、提升匹配、标准转换、用户定义转换
@@ -77,7 +77,7 @@
 	13.3：多态共有继承。在派生类中重新定义基类的方法，使用虚方法
 	13.4：动静态联编。普通函数的早期函数编译为静态联编，虚函数的晚期编译为
 		动态联编。
-	13.5：向上强制类型转换[隐式]，向下类型强制转换[显式]
+	13.5：向上类型强制转换[隐式]，向下类型强制转换[显式]
 	13.6：抽象基类。不能定义，且包含纯虚函数或纯函数
 	13.7：继承和动态内存分配。先调用基类构造，再调用派生类构造，析构相反，其中有元
 		成员函数使用基类的指针调用
@@ -96,16 +96,22 @@
 	15.1：友元类的定义。某一类型专属处理另一类型
 	15.2：友元成员函数。将友元类中的某个函数申明为另一个类的友元函数
 	15.3：异常
-	15.4：RTTI：dynamic_cast, typeid, type_info
+	15.4：RTTI：dynamic_cast, typeid, type_info, decltype(C11)
 	15.5：类型装换运算符：dynamic_case, const_cast, static_cast, reinterpret_case
 第十六章：string类和标准模板库
 	16.1：string常用功能。find(str,pos), find(str,pos,size), find(ch,pos) 等系列
 	16.2：字符种类。char, wchar_t, char16_t, char32_t. 
 					string, wstring, u16string, u32string
-	16.3：智能指针类。auto_ptr, unique_ptr, shared_ptr
+	16.3：智能指针类。auto_ptr, unique_ptr, week_ptr, shared_ptr
 	16.4：C++ for。基于范围循环，基于容器循环
-	16.5：STL常用容器。适配器容器[vector, deque, priority_queue, list]，
-		关联容器[map, multimap, set, multiset, bitset]，序列容器[queue, stack]
+	16.5：STL常用容器。
+		序列式容器[vector, list, deque]
+		适配器容器[stack, queue, priority_queue]
+		关联容器[set, multiset, map, multimap]
+		C11新增：
+			unordered_map，unordered_multimap
+			unordered_set，unordered_multiset
+			array，forward_list，tuple
 	16.6：STL常用迭代器。输入、输出、正向、双向、随机访问迭代器
 	16.7：STL常用函数对象。函数对象[函数，函数指针，重载()符号的对象]，函数符[函数名]
 	16.8：STL常用算法。sort, copy, find, random_shuffle, set_union, set_intersection
@@ -127,4 +133,3 @@
 	17.6：文件的输入和输出。
 		文件输入[ifstream]:open,关联打开,is_open, getline, get, close
 		文件输出[ofstream]:seekg, beg, cur, end
-	

@@ -44,7 +44,7 @@ CONFIG get requirepass， .conf文件中修改 requirepass 即可
 
 数据类型：
 String		set，	get
-Hash		hmset,	hget
+Hash		hset,	hget
 List		lpush,	lrange
 Set			sadd,	smebers
 Zset		zadd,	zrangebyscore

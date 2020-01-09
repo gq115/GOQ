@@ -1,0 +1,48 @@
+﻿Ctrl+Tab					文件之间切换
+Alt+ ↑ / ↓					向上/向下移动行
+Ctrl+Shift+\				跳到匹配的括号
+Ctrl+↑ / ↓					向上/向下滚动行
+Alt+PgUp / PgDown			向上/向下滚动页面
+Ctrl + G					转到行
+Ctrl + P					转到文件
+Ctrl + B					切换侧栏可见性
+Ctrl + J					切换状态栏可见
+Crol + D					选中单个字符
+Ctrl + F2					选择当前字的所有出现
+Ctrl+Alt+ + / -				当前文档的跳转到别的窗口
+Ctrl+Alt+ ↑ / ↓             多行选择
+Ctrl+Shift+E	显示资源管理器
+Ctrl+Shift+F	显示搜索 Show Search
+Ctrl+Shift+G	显示Git Show Git
+Ctrl+Shift+M	问题状态栏
+Ctrl+Shift+U	输出状态栏
+Ctrl+Shift+Y	调试控制台栏
+F11				全屏
+
+
+
+
+windows常用快捷键
+Win+D			显示桌面
+Shift+F10		鼠标右键
+Win+↑ / ↓       最大化，最小化
+Win+<- / ->		分窗口
+Alt + F4 关闭程序
+
+
+notepad常用
+Alt+Shift		列选择
+F12				设置工具界面全屏
+F11				设置屏幕界面全屏
+
+https://www.cnblogs.com/fire909090/p/6770059.html
+
+
+  
+SqlServer 常用快捷键
+	键盘 左/右 将选中的列展开或者合并
+	Shift + F10：		打开功能菜单 
+	Alt + F8：			鼠标光标激活对象资源管理器
+	Ctrl + Tab:			将光标激活到工作区
+	Ctrl + F4：			关闭当前工作区
+	
