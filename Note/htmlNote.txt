@@ -97,6 +97,9 @@ html 列表
 html 区块
 	<div>	定义了文档的区域，块级 (block-level)
 	<span>	用来组合文档中的行内元素， 内联元素(inline)
+html 布局
+	<div>	利用CSS样式表调整，形成布局
+	<table>	利用表格各项布局，并设置表格的样式进行优化
 html 表单
 	from:
 		支持操作:
